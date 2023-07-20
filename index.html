@@ -3,21 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="css/style.css">
 
   <title>Zoom clone </title>
 </head>
 <body>
   
-  <header class="debug d-flex align-center justify-center">
-    <h1>Zoom</h1>
+  <header class="d-flex">
+    <nav>
+      <ul>
+        <li><a class="speaker-view btn" href="#"><i class="fa-solid fa-table-cells"></i> Speaker View</a></li>
+        <li><a href="#" class="fullscreen btn"><i class="fa-solid fa-maximize"></i></a></li>
+      </ul>
+    </nav>
+      
+    
   </header>
   
   
   
-  <main class="container debug d-flex align-center justify-center">
+  <main class="container debug d-flex align-center justify-center wrap">
 
-    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt similique ipsa maxime facilis reiciendis consequatur repudiandae labore itaque vitae blanditiis, dignissimos ut eos doloribus tempore atque culpa libero repellendus quam minus magnam! Ex id adipisci ullam? Esse, atque dolor odio veniam magnam rerum quod animi sequi vero obcaecati vel sed.</div>
+    <div class="user-card">
+      <div class="user-image">
+        <img src="https://loremflickr.com/640/360" alt="user-image">
+        <div class="user-info">
+          <span class="mic-status"><i class="fa-solid fa-microphone-slash"></i></span>
+          <span class="user-name">Pinco Pallo</span>
+        </div>
+      </div>
+      
+    </div>
 
   </main>
   
