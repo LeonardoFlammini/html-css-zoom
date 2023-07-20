@@ -16,6 +16,10 @@ body {
 .container{
   width: 100%;
   height: calc(100vh - 180px);
+  padding: 20px 0;
+  gap: 10px;
+  background-color: black;
+  overflow: auto;
 }
 
 .debug {
