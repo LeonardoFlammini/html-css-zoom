@@ -9,3 +9,30 @@
   height: calc(100vh - 180px);
 }
 
+.debug {
+  border: 2px solid black;
+  background-color: lime;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+header{
+  height: 100px;
+  width: 100%;
+}
+
+footer{
+  height: 80px;
+  width: 100%;
+  
+}
