@@ -5,10 +5,14 @@
 }
 body {
   font-family: sans-serif;
+  background-color: black; 
 }
 
 :root {
   --btn-colour: #4A4A4A;
+  --share-green: #63CC0E;
+  --end-call-red: #DA3F2B;
+  --footer-color: #222222;
 }
 
 /* utilities */
@@ -18,7 +22,6 @@ body {
   height: calc(100vh - 180px);
   padding: 20px 0;
   gap: 10px;
-  background-color: black;
   overflow: auto;
 }
 
@@ -58,7 +61,6 @@ body {
 header{
   height: 100px;
   width: 100%;
-  background-color: black;
   align-items: flex-end;
   justify-content: flex-end;
 }
@@ -107,8 +109,72 @@ main .user-card {
   font-size: 0.8rem;
 }
 
+/* footer */
+
 footer{
   height: 80px;
   width: 100%;
-  
+  color: white;
+  background-color: var(--footer-color);
+}
+
+.audio-video .col,
+.actions .col {
+  margin-left: 10px;
+}
+
+.audio-video .text,
+.actions .text {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.audio-video .icon,
+.actions .icon {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.audio-video .arrow{
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.audio-controll{
+  height: 80px;
+  align-items: stretch;
+}
+
+.video-control .col{
+  flex-basis: 75%;
+}
+
+.video-controll .col:last-child{
+  flex-basis: 25%;
+}
+
+.audio-video, 
+.end-call {
+  flex-basis: 25%;
+}
+
+.actions {
+  flex-basis: 50%;
+}
+
+.end-call {
+  flex-direction: row-reverse;
+  align-items: stretch;
+}
+
+.end-call .end-btn{
+  color: var(--end-call-red);
+  background-color: var(--btn-colour);
+}
+
+.actions .col:nth-child(2),
+.actions .col:nth-child(8) {
+  flex-grow: 2;
 }
