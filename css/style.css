@@ -136,7 +136,8 @@ footer{
   padding-top: 15px;
 }
 
-.audio-video .arrow{
+.audio-video .arrow,
+.actions .arrow {
   font-size: 1.2rem;
   text-align: center;
   padding-top: 30px;
@@ -162,6 +163,7 @@ footer{
 
 .actions {
   flex-basis: 50%;
+  padding: 0 40px;
 }
 
 .end-call {
@@ -177,4 +179,8 @@ footer{
 .actions .col:nth-child(2),
 .actions .col:nth-child(8) {
   flex-grow: 2;
+}
+
+.actions .icon#share {
+  color: var(--share-green);
 }
